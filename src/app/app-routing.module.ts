@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
-import { HomeComponent } from './fundacion/pages/home/home.component';
+
 
 const routes: Routes = [
   {
@@ -15,16 +15,15 @@ const routes: Routes = [
   },
 
   {
-    path: 'home',
-    component: HomeComponent
+    path: '404',
+    component: ErrorPageComponent
   },
   {
     path: '**',
   // component: ErrorPageComponent
-  redirectTo: 'home'
+  redirectTo: '404'
   }
 ]
-
 
 @NgModule({
   declarations: [],

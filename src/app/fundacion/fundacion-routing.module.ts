@@ -9,7 +9,6 @@ import { EsalComponent } from './pages/esal/esal.component';
 const rutas: Routes = [
   {
     path: '',
-      component: HomeComponent,
       children:[
       { path: 'home', component: HomeComponent },
       { path: 'somos', component: SomosComponent },

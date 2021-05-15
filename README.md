@@ -1,27 +1,43 @@
-# Fundacioncristo
+# PAGINA DE LA FUNDACION CRISTO REDENTOR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+Este un proyecto que me encuentro realizando para la fundacion cristo redentor de Bucaramanga, la cual es sin animo de lucro, fundación que atiende mas de 100 adultos mayores todos los dias, que son abandonados en los diferentes calles de la ciudad de Bucaramanga, la entidad los recoge para brindarles un techo, comida y amor para hacer mas llevadera su vida natural.
 
-## Development server
+## VISION DEL PROYECTO
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+"La visión de este proyecto es poder generar un pagina elegante con un derarrollo elegante a medida que pueda realizar seguir aprendiendo los metodos de desarrollo con angular, hasta llevarla con el mejor visualización en el mundo entero con pagina de donaciones en linea"
 
-## Code scaffolding
+## DESCARGA PRODUCTO
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Por favor clone el proyecto con el git clone y realice la descarga en su equipo local
+- Instale la version de @angular/cli 11
+- Desde una terminal de su equipo de computo realice el comando "npm install" para recostruir todos los modulos utilizados en el presente proyecto.
 
-## Build
+- npm install -g @angular/cli
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## CONSTRUIDO CON
 
-## Running unit tests
+@angular.io/cli
+angualar/material
+fxlayauot
+visual studio code
+Githud
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## VERSIÓN
 
-## Running end-to-end tests
+La versión se estará utilizando las primera versines
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+## AUTORES
 
-## Further help
+Este proyecto se iniciado desde varios años pero se inciado con la nueva version en el año 2021:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Leonardo Merchan Aguilar - Programador Inicial
+
+## LICENCIA
+
+Este proyecto está bajo la Licencia de la fundación Cristo Redentor - el cual puede ser libre en su desarrollo hasta el evento de desarrollo inicial.
+
+## EXPRESIONE DE GRATITUD
+
+- La fundación cristo Redentor
+- Leonardo Merchan Aguilar - programador inicial
+- Otros que quieran continuar apoyando este proyecto
