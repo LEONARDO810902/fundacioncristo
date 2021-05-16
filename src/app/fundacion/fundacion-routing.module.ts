@@ -9,20 +9,23 @@ import { EsalComponent } from './pages/esal/esal.component';
 const rutas: Routes = [
   {
     path: '',
+      component: HomeComponent,
       children:[
-      { path: 'home', component: HomeComponent },
       { path: 'somos', component: SomosComponent },
-      { path: 'esal', component: EsalComponent }
-
+      { path: 'esal', component: EsalComponent },
     ]
+  },
+  {
+    path: '',
+    redirectTo: 'ErrorPageComponent',
+    pathMatch: 'full'
   }
 ]
 
 @NgModule({
 
-  imports: [
-    RouterModule.forChild(rutas)
-  ],
+  imports: [RouterModule.forChild(rutas)],
+
   exports: [
     RouterModule
   ]

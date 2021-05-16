@@ -5,23 +5,16 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 
 const routes: Routes = [
-  {
-    path: 'auth',
-    loadChildren:() => import('./auth/auth.module').then(m => m.AuthModule)
-  },
-  {
-    path: 'fundacion',
+
+   {
+    path: '',
     loadChildren:() => import('./fundacion/fundacion.module').then(m => m.FundacionModule)
   },
 
   {
-    path: '404',
-    component: ErrorPageComponent
-  },
-  {
-    path: '**',
-  // component: ErrorPageComponent
-  redirectTo: '404'
+  path: '**',
+  redirectTo: '',
+  pathMatch: 'full'
   }
 ]
 

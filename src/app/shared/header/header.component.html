@@ -1,0 +1,48 @@
+<mat-sidenav-container autosize color="primary">
+  <mat-sidenav
+                #sidenav
+                mode="side"
+                opened="true"
+                >
+    <mat-nav-list >
+
+      <button >
+      <mat-list-item autozize>
+        <mat-icon
+                  mat-list-icon
+                  class="chevron-button sidenav-button "
+                  (click)="isExpanded = !isExpanded"
+                  [ngClass]="{'rotated': isExpanded}"
+                  color="primary">
+                  chevron_right
+                </mat-icon>
+      </mat-list-item>
+    </button>
+
+      <mat-list-item [routerLink]="'home'">
+        <mat-icon class="spacer" mat-list-icon>home</mat-icon>
+        <span *ngIf="isExpanded">INICIO</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="'somos'">
+        <mat-icon class="spacer" mat-list-icon>important_devices</mat-icon>
+        <span *ngIf="isExpanded">SOMOS</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="'esal'">
+        <mat-icon class="spacer" mat-list-icon>important_devices</mat-icon>
+        <span *ngIf="isExpanded" >ESAL</span>
+      </mat-list-item>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div class="content">
+    <mat-toolbar>
+      <h4>Fundación Cristo Redentor</h4>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>

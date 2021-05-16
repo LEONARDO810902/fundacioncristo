@@ -6,6 +6,9 @@ import { FundacionRoutingModule } from './fundacion-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { SomosComponent } from './pages/somos/somos.component';
 import { EsalComponent } from './pages/esal/esal.component';
+import { AppModule } from '../app.module';
+import { MaterialModule } from '../material/material.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,7 +20,10 @@ import { EsalComponent } from './pages/esal/esal.component';
   ],
   imports: [
     CommonModule,
-    FundacionRoutingModule
+    FundacionRoutingModule,
+    MaterialModule,
+    SharedModule
+
 
   ]
 })
