@@ -17,7 +17,7 @@ const rutas: Routes = [
   },
   {
     path: '',
-    redirectTo: 'ErrorPageComponent',
+    redirectTo: 'HomeComponent',
     pathMatch: 'full'
   }
 ]
