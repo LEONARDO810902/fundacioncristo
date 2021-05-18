@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { SomosComponent } from './pages/somos/somos.component';
 import { EsalComponent } from './pages/esal/esal.component';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 const rutas: Routes = [
   {
@@ -13,6 +14,9 @@ const rutas: Routes = [
       children:[
       { path: 'somos', component: SomosComponent },
       { path: 'esal', component: EsalComponent },
+      { path: 'footer', component: FooterComponent },
+
+
     ]
   },
   {

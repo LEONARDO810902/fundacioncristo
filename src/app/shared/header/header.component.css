@@ -1,14 +1,14 @@
-mat-sidenav-container{
-  height: 100%;
-  resize: horizontal;
+mat-drawer-container{
+  min-height: 70%;
+  background-color: #ECF0F1;
 }
 
-.spacer{
-  flex: 1 1 auto;
-  }
+.draMenu{
+  height: 100%;
+  background-color: #3940DA;
 
+}
 
-.chevron-button.rotated {
-    transform: rotate(180deg);
-  }
-
+.btnMenu{
+  background-color: rgb(15, 170, 28);
+}

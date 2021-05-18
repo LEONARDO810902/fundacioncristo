@@ -1,48 +1,59 @@
-<mat-sidenav-container autosize color="primary">
-  <mat-sidenav
-                #sidenav
-                mode="side"
-                opened="true"
-                >
-    <mat-nav-list >
+<p>
+  <mat-toolbar color="primary">
+    <span>FUNDACION CRISTO REDENTOR</span>
+  </mat-toolbar>
+</p>
 
-      <button >
-      <mat-list-item autozize>
-        <mat-icon
-                  mat-list-icon
-                  class="chevron-button sidenav-button "
-                  (click)="isExpanded = !isExpanded"
-                  [ngClass]="{'rotated': isExpanded}"
-                  color="primary">
-                  chevron_right
-                </mat-icon>
-      </mat-list-item>
-    </button>
-
-      <mat-list-item [routerLink]="'home'">
-        <mat-icon class="spacer" mat-list-icon>home</mat-icon>
-        <span *ngIf="isExpanded">INICIO</span>
-      </mat-list-item>
-
-      <mat-list-item [routerLink]="'somos'">
-        <mat-icon class="spacer" mat-list-icon>important_devices</mat-icon>
-        <span *ngIf="isExpanded">SOMOS</span>
-      </mat-list-item>
-
-      <mat-list-item [routerLink]="'esal'">
-        <mat-icon class="spacer" mat-list-icon>important_devices</mat-icon>
-        <span *ngIf="isExpanded" >ESAL</span>
-      </mat-list-item>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="draMenu">
 
 
-    </mat-nav-list>
-  </mat-sidenav>
+    <button
+              mat-button
+              [matMenuTriggerFor]="fundacion"
+              class="btnMenu"
+              >
+              Menu Fundación
+            </button>
 
-  <div class="content">
-    <mat-toolbar>
-      <h4>Fundación Cristo Redentor</h4>
-    </mat-toolbar>
+    <mat-menu #fundacion="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="Quines_Somos">Fundacion</button>
+      <button mat-menu-item [matMenuTriggerFor]="servicios">Servicios</button>
+      <button mat-menu-item>CONTACTO</button>
+      <button mat-menu-item>CORREO</button>
+    </mat-menu>
+
+
+    <mat-menu #Quines_Somos="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="somos">Somos</button>
+      <button mat-menu-item [matMenuTriggerFor]="direccion">Dirección</button>
+
+    </mat-menu>
+
+    <mat-menu #servicios="matMenu">
+      <button mat-menu-item>Alojamiento</button>
+      <button mat-menu-item>Comida</button>
+      <button mat-menu-item disabled >Bientar Social</button>
+    </mat-menu>
+
+    <mat-menu #somos="matMenu">
+      <button mat-menu-item [routerLink]="'somos'">Somos</button>
+      <button mat-menu-item [routerLink]="''">Visión</button>
+      <button mat-menu-item [routerLink]="''">Misión</button>
+    </mat-menu>
+
+    <mat-menu #direccion="matMenu">
+      <button mat-menu-item>Director</button>
+      <button mat-menu-item>Junta Directiva</button>
+      <button mat-menu-item>Fundadores</button>
+      <button mat-menu-item [routerLink]="'esal'">Esal</button>
+    </mat-menu>
+
+
+  </mat-drawer>
+  <mat-drawer-content>
+
     <router-outlet></router-outlet>
-  </div>
 
-</mat-sidenav-container>
+  </mat-drawer-content>
+</mat-drawer-container>
